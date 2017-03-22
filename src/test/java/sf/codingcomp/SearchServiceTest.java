@@ -22,7 +22,8 @@ public class SearchServiceTest {
     private SearchService searchService;
 
 
-    //2 hours logged on 3.22.2017
+    //3 hours logged on 3.22.2017
+    //...
 
     @Before
     public void setup() {

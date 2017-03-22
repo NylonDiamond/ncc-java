@@ -2,6 +2,8 @@ package sf.codingcomp.model;
 
 import com.google.gson.annotations.SerializedName;
 
+
+
 public class Entertainment {
 
     @SerializedName( "Title" )

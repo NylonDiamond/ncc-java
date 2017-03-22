@@ -2,26 +2,29 @@ package sf.codingcomp.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Comparator;
+import java.util.Date;
+
 public class Movie extends Entertainment {
 
-    @SerializedName( "Runtime" )
+    @SerializedName("Runtime")
     private String runtime;
-    @SerializedName( "Director" )
+    @SerializedName("Director")
     private String director;
-    @SerializedName( "Writer" )
+    @SerializedName("Writer")
     private String writer;
-    @SerializedName( "StockDVD" )
+    @SerializedName("StockDVD")
     private String stockDvd;
-    @SerializedName( "StockBR" )
+    @SerializedName("StockBR")
     private String stockBr;
-    @SerializedName( "Format" )
+    @SerializedName("Format")
     private String format;
 
     public String getRuntime() {
         return runtime;
     }
 
-    public void setRuntime( String runtime ) {
+    public void setRuntime(String runtime) {
         this.runtime = runtime;
     }
 
@@ -29,7 +32,7 @@ public class Movie extends Entertainment {
         return director;
     }
 
-    public void setDirector( String director ) {
+    public void setDirector(String director) {
         this.director = director;
     }
 
@@ -37,7 +40,7 @@ public class Movie extends Entertainment {
         return writer;
     }
 
-    public void setWriter( String writer ) {
+    public void setWriter(String writer) {
         this.writer = writer;
     }
 
@@ -45,7 +48,7 @@ public class Movie extends Entertainment {
         return stockDvd;
     }
 
-    public void setStockDvd( String stockDvd ) {
+    public void setStockDvd(String stockDvd) {
         this.stockDvd = stockDvd;
     }
 
@@ -53,7 +56,7 @@ public class Movie extends Entertainment {
         return stockBr;
     }
 
-    public void setStockBr( String stockBr ) {
+    public void setStockBr(String stockBr) {
         this.stockBr = stockBr;
     }
 
@@ -61,7 +64,7 @@ public class Movie extends Entertainment {
         return format;
     }
 
-    public void setFormat( String format ) {
+    public void setFormat(String format) {
         this.format = format;
     }
 
@@ -74,4 +77,18 @@ public class Movie extends Entertainment {
                 + ", getUserRating()=" + getUserRating() + ", getType()=" + getType() + ", getGenre()=" + getGenre() + "]";
     }
 
+//    public static Comparator<Movie> StuNameComparator = new Comparator<Movie>() {
+//        public int compare(Movie s1, Movie s2) {
+//            Date StudentName1 = s1.getReleased();
+//            Date StudentName2 = s2.getReleased();
+//
+//            //ascending order
+//            return StudentName1.compareTo(StudentName2);
+//
+//            //descending order
+//            //return StudentName2.compareTo(StudentName1);
+//        }
+//
+//
+//    }
 }
