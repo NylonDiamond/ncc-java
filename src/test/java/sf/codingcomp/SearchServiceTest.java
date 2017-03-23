@@ -23,7 +23,8 @@ public class SearchServiceTest {
 
 
     //3 hours logged on 3.22.2017
-    //...
+    //3.50
+    //Total time: 7-Hours
 
     @Before
     public void setup() {
@@ -168,9 +169,9 @@ public class SearchServiceTest {
      */
     @Test
     public void testSearchGamesByGenreAndRating() throws Exception {
-        List<Movie> moviesByGenreAndRating = searchService.moviesByGenreAndRating( "Adventure", "E" );
-        moviesByGenreAndRating.forEach( m -> assertTrue( Arrays.asList( m.getGenre().split( "," ) ).contains( "Adventure" )
-                && m.getRated().equals( "R" ) ) );
+        List<Game> gamesByGenreAndRating = searchService.gamesByGenreAndRating( "Adventure", "E" );
+        gamesByGenreAndRating.forEach( g -> assertTrue( Arrays.asList( g.getGenre().split( "," ) ).contains( "Adventure" )
+                && g.getRated().equals( "E" ) ) );
     }
 
     /**

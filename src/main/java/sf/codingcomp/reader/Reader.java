@@ -48,7 +48,7 @@ public class Reader {
             List<Entertainment> both = new ArrayList<>();
             both.addAll(movies);
             both.addAll(games);
-System.out.println(both);
+//System.out.println(both);
             return both;
 
         } catch ( JsonIOException | JsonSyntaxException | FileNotFoundException e ) {
